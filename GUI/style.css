@@ -1,0 +1,36 @@
+.card-view {
+    -fx-background-color: white;
+    -fx-background-radius: 10px;
+    -fx-border-color: gray;
+    -fx-border-radius: 10px;
+    -fx-border-width: 1px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.3), 10, 0.5, 0, 2);
+    -fx-padding: 10px;
+}
+
+.course-name-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+}
+
+.course-type-label {
+    -fx-font-size: 14px;
+}
+
+.course-age-label {
+    -fx-font-size: 14px;
+}
+
+.course-dispo-label {
+    -fx-font-size: 14px;
+}
+
+.course-title-box {
+    -fx-alignment: center-left;
+    -fx-spacing: 10px;
+}
+
+.course-content-box {
+    -fx-alignment: center-left;
+    -fx-spacing: 5px;
+}

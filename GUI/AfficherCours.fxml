@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="405.0" prefWidth="673.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI.AfficherCoursController">
+   <children>
+      <ImageView fitHeight="463.0" fitWidth="685.0" layoutY="-34.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/bac.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="89.0" fitWidth="119.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="164.0" layoutY="20.0" prefHeight="38.0" prefWidth="336.0" text="Liste des Cours" textFill="#8a0b0b">
+         <font>
+            <Font name="System Bold Italic" size="46.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnafficher" layoutX="603.0" layoutY="54.0" mnemonicParsing="false" onAction="#Afficher_Cours" text="Actualiser" />
+      <TableView fx:id="table" layoutX="6.0" layoutY="98.0" prefHeight="246.0" prefWidth="664.0" stylesheets="@table.css" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="6.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="98.0">
+        <columns>
+            <TableColumn fx:id="id_cours" minWidth="0.0" prefWidth="0.0" />
+          <TableColumn fx:id="nom_cours" prefWidth="100.0" text="nom_cours" />
+          <TableColumn fx:id="Description" prefWidth="142.0" text="Description" />
+            <TableColumn fx:id="type" prefWidth="65.0" text="type" />
+            <TableColumn fx:id="age_Min" prefWidth="77.0" text="age_Min" />
+            <TableColumn fx:id="age_Max" prefWidth="74.0" text="age Max " />
+            <TableColumn fx:id="disponibilité" prefWidth="98.0" text="disponibilité" />
+            <TableColumn fx:id="editCol" prefWidth="134.0" text="ediit/delete" />
+        </columns>
+      </TableView>
+      <Button fx:id="btnacceuil" layoutX="38.0" layoutY="368.0" mnemonicParsing="false" onAction="#AcceuilCours" text="Acceuil" />
+      <Button fx:id="btnajouter" layoutX="173.0" layoutY="368.0" mnemonicParsing="false" onAction="#Ajouter_Cours" text="Ajouter" />
+      <Button fx:id="btnarchiver" layoutX="323.0" layoutY="368.0" mnemonicParsing="false" onAction="#Archiver_Cours" text="Liste Archive" />
+      <Button fx:id="btntrimin" layoutX="611.0" layoutY="356.0" mnemonicParsing="false" onAction="#triParAgeMin" text="TriAgeMin" />
+      <TextField fx:id="searchfield" layoutX="537.0" layoutY="393.0" promptText="recherche " />
+   </children>
+</AnchorPane>
